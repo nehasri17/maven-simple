@@ -3,7 +3,7 @@ node{
         git 'https://github.com/nehasri17/maven-simple.git'    
     }
     stage('Package'){
-        sh 'mvn clean package install deploy'
+        sh 'mvn clean package install'
     }
     stage('artifacts'){
         archiveArtifacts 'target/*.jar'
